@@ -115,8 +115,63 @@
     setInterval(tick, 1000);
   }
 
+  function paintHeroCountdown() {
+    const titleEl = document.getElementById("hc-title");
+    const roundEl = document.getElementById("hc-round");
+    const metaEl  = document.getElementById("hc-meta");
+    const countEl = document.getElementById("hc-count");
+    if (!countEl && !titleEl) return;
+
+    function hbox(val, label) { return '<div class="u"><b>' + val + '</b><span>' + label + '</span></div>'; }
+
+    function tick() {
+      const now = new Date();
+      const r = nextRace(now);
+      if (!r) {
+        if (titleEl) titleEl.textContent = "Season complete";
+        if (roundEl) roundEl.textContent = "See you in 2027";
+        if (metaEl)  metaEl.textContent = "";
+        if (countEl) countEl.innerHTML = "";
+        return;
+      }
+      if (titleEl) titleEl.textContent = r.circuit;
+      if (roundEl) roundEl.textContent = r.series + " · Round " + r.round.replace(/^R/, "");
+      if (metaEl)  metaEl.textContent = prettyRange(r.start, r.end) + " · " + r.loc;
+      const target = startDT(r.start).getTime();
+      let diff = Math.floor((target - now.getTime()) / 1000);
+      if (diff <= 0) {
+        if (countEl) countEl.innerHTML = '<div class="u live"><b>Racing now</b></div>';
+        return;
+      }
+      const days = Math.floor(diff / 86400); diff -= days * 86400;
+      const hrs  = Math.floor(diff / 3600);  diff -= hrs * 3600;
+      const min  = Math.floor(diff / 60);
+      const sec  = diff - min * 60;
+      if (countEl) countEl.innerHTML = hbox(days, "Days") + hbox(pad(hrs), "Hrs") + hbox(pad(min), "Mins") + hbox(pad(sec), "Secs");
+    }
+    tick();
+    setInterval(tick, 1000);
+  }
+
+  function paintEventDays() {
+    const el = document.getElementById("ev-countdown");
+    if (!el) return;
+    function tick() {
+      const now = new Date();
+      let target;
+      if (el.dataset.date) target = startDT(el.dataset.date).getTime();
+      else { const r = nextRace(now); if (!r) { el.textContent = "—"; return; } target = startDT(r.start).getTime(); }
+      const diff = Math.floor((target - now.getTime()) / 1000);
+      el.textContent = diff <= 0 ? "0" : String(Math.floor(diff / 86400));
+    }
+    tick();
+    setInterval(tick, 60000);
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     paintCalendar(new Date());
     paintNextRace();
+    paintHeroCountdown();
+    paintEventDays();
   });
 })();

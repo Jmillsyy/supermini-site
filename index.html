@@ -7,7 +7,7 @@
 <meta name="description" content="The SuperMini Challenge is a QLD-based, Motorsport Australia–affiliated club running fun, competitive and affordable BMW R53 Cooper S racing. Get on the grid.">
 <link rel="stylesheet" href="assets/styles.css?v=4">
 <script defer src="assets/nav.js?v=5"></script>
-<script defer src="assets/schedule.js?v=5"></script>
+<script defer src="assets/schedule.js?v=6"></script>
 </head>
 <body>
 
@@ -16,13 +16,13 @@
     <a class="logo" href="index.html"><img class="brand" src="assets/logo-black.png" alt="SuperMini Challenge"></a>
     <nav class="main">
       <ul>
-        <li><a href="about.html">About</a></li>
+        
         <li><a href="the-car.html">The Car</a></li>
         <li><a href="calendar.html">Calendar</a></li>
         <li><a href="results.html">Results</a></li>
         <li><a href="drivers.html">Drivers</a></li>
         <li><a href="news.html">News</a></li>
-        <li><a href="sponsors.html">Sponsors</a></li>
+        
       </ul>
     </nav>
     <div class="cta">
@@ -32,6 +32,21 @@
     </div>
   </div>
 </header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap">
+    <p class="eyebrow" style="color:#fff;opacity:.85">Next Round</p>
+    <div class="hero-count" id="hc-count"></div>
+    <h1 id="hc-title">Loading…</h1>
+    <p class="hero-meta" id="hc-round"></p>
+    <p class="hero-meta hero-dates" id="hc-meta"></p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="event.html">Event Info</a>
+      <a class="btn btn-ghost" href="get-involved.html">Start Racing</a>
+    </div>
+  </div>
+</section>
 
 <section class="bg2" id="news" style="padding-top:48px">
   <div class="wrap">
@@ -61,14 +76,14 @@
       <p class="eyebrow">What is the SMC</p>
       <h2 style="font-size:2.1rem;margin:10px 0 18px">Grassroots racing, done right.</h2>
       <p style="color:var(--muted);margin-bottom:16px">SuperMini Challenge Inc is a non-profit, Motorsport Australia–affiliated club, run by an elected volunteer committee for the benefit of its members. Since 2022 we've given newcomers and seasoned racers a place to go wheel-to-wheel without breaking the bank.</p>
-      <p style="color:var(--muted);margin-bottom:22px">One controlled car. Two championships and eight rounds across Queensland, New South Wales and South Australia. A friendly paddock that wants you to succeed.</p>
+      <p style="color:var(--muted);margin-bottom:22px">Two classes, two championships and eight rounds across Queensland, New South Wales and South Australia. A friendly paddock that wants you to succeed.</p>
       <a class="btn btn-ghost" href="about.html">Read our story</a>
     </div>
     <div class="pillars">
-      <div class="pillar"><div class="ic">🏁</div><h4>Close racing</h4><p>One equal spec means the driver makes the difference.</p></div>
-      <div class="pillar"><div class="ic">💲</div><h4>Affordable</h4><p>A low-cost, controlled platform keeps budgets sane.</p></div>
-      <div class="pillar"><div class="ic">🍻</div><h4>Racing with mates</h4><p>It's about the people — a tight-knit, welcoming paddock.</p></div>
-      <div class="pillar"><div class="ic">🎉</div><h4>Seriously fun</h4><p>Proper wheel-to-wheel racing, without taking itself too seriously.</p></div>
+      <div class="pillar"><h4>Close racing</h4><p>Tightly matched fields where the driver makes the difference.</p></div>
+      <div class="pillar"><h4>Affordable</h4><p>Low running costs keep budgets sane.</p></div>
+      <div class="pillar"><h4>Racing with mates</h4><p>It's about the people — a tight-knit, welcoming paddock.</p></div>
+      <div class="pillar"><h4>Seriously fun</h4><p>Proper wheel-to-wheel racing, without taking itself too seriously.</p></div>
     </div>
   </div>
 </section>
@@ -78,11 +93,11 @@
     <div>
       <p class="eyebrow">The Car</p>
       <h2 style="font-size:2.2rem;margin:10px 0 16px">BMW R53 Cooper S</h2>
-      <p style="color:var(--muted)">Every car in the SuperMini Challenge is built on the same platform — the BMW R53 Cooper S. One spec, evenly paced and exciting to drive, keeping the racing close right through the field.</p>
+      <p style="color:var(--muted)">The headline Cooper Class is built on the BMW R53 Cooper S — an evenly matched, affordable car that's exciting to drive and keeps the racing close right through the field.</p>
       <div class="specs">
         <div class="spec"><b>R53</b><span>Platform</span></div>
         <div class="spec"><b>Cooper S</b><span>Model</span></div>
-        <div class="spec"><b>1 class</b><span>Equal spec</span></div>
+        <div class="spec"><b>Cooper</b><span>Class</span></div>
         <div class="spec"><b>TBC</b><span>Full specs soon</span></div>
       </div>
       <a class="btn btn-ghost" href="the-car.html" style="margin-top:24px">More on the car</a>
@@ -94,18 +109,36 @@
 
 <section id="standings">
   <div class="wrap">
-    <div class="section-head"><p class="eyebrow">Championship</p><h2>Current standings</h2><p>2026 SuperMini Challenge — overall standing points.</p></div>
-    <table>
-      <thead><tr><th>Pos</th><th>Driver</th><th>Car #</th><th style="text-align:right">Points</th></tr></thead>
-      <tbody>
-        <tr><td class="pos">1</td><td>Brock Gilchrist</td><td>10</td><td class="pts">293</td></tr>
-        <tr><td class="pos">2</td><td>Gregg Chesterfield</td><td>54</td><td class="pts">267</td></tr>
-        <tr><td class="pos">3</td><td>Josh Mills</td><td>3</td><td class="pts">240</td></tr>
-        <tr><td class="pos">4</td><td>Anthony Elliott</td><td>66</td><td class="pts">190</td></tr>
-        <tr><td class="pos">5</td><td>Brayden Larkin</td><td>7</td><td class="pts">190</td></tr>
-      </tbody>
-    </table>
-    <div style="margin-top:24px"><a class="btn btn-ghost" href="results.html">Full results</a></div>
+    <div class="section-head"><p class="eyebrow">Championship</p><h2>Current standings</h2><p>2026 Queensland State Championship — top five by class.</p></div>
+    <div class="grid-2" style="align-items:start;gap:36px">
+      <div>
+        <h3 style="font-family:var(--font-head);text-transform:uppercase;letter-spacing:.04em;font-size:1.1rem;margin-bottom:14px"><span class="accent">Cooper</span> Class</h3>
+        <table>
+          <thead><tr><th>Pos</th><th>Driver</th><th>Car #</th><th style="text-align:right">Points</th></tr></thead>
+          <tbody>
+            <tr><td class="pos">1</td><td>Brock Gilchrist</td><td>10</td><td class="pts">293</td></tr>
+            <tr><td class="pos">2</td><td>Josh Mills</td><td>3</td><td class="pts">240</td></tr>
+            <tr><td class="pos">3</td><td>Blake Mills</td><td>1</td><td class="pts">187</td></tr>
+            <tr><td class="pos">4</td><td>Trent Spencer</td><td>339</td><td class="pts">186</td></tr>
+            <tr><td class="pos">5</td><td>Zane Goddard</td><td>83</td><td class="pts">172</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3 style="font-family:var(--font-head);text-transform:uppercase;letter-spacing:.04em;font-size:1.1rem;margin-bottom:14px"><span class="accent">Open</span> Class</h3>
+        <table>
+          <thead><tr><th>Pos</th><th>Driver</th><th>Car #</th><th style="text-align:right">Points</th></tr></thead>
+          <tbody>
+            <tr><td class="pos">1</td><td>Gregg Chesterfield</td><td>54</td><td class="pts">265</td></tr>
+            <tr><td class="pos">2</td><td>Anthony Elliott</td><td>66</td><td class="pts">190</td></tr>
+            <tr><td class="pos">3</td><td>Brayden Larkin</td><td>7</td><td class="pts">190</td></tr>
+            <tr><td class="pos">4</td><td>Andrew Mills</td><td>24</td><td class="pts">184</td></tr>
+            <tr><td class="pos">5</td><td>James Campbell</td><td>72</td><td class="pts">162</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:28px"><a class="btn btn-ghost" href="results.html">Full results</a></div>
   </div>
 </section>
 
@@ -113,7 +146,7 @@
   <div class="wrap">
     <p class="eyebrow">Get Involved</p>
     <h2>Your seat on the grid is waiting</h2>
-    <p>New to racing or coming back to it — we'll help you get licensed, get a car and line up for your first round. Affordable, friendly and seriously fun.</p>
+    <p>Get a car and come racing with us.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="get-involved.html">Join the SMC</a>
       <a class="btn btn-ghost" href="the-car.html">Get a SuperMini</a>
@@ -138,7 +171,7 @@
         <p style="color:var(--muted);font-size:.88rem;max-width:300px">Fun, competitive and affordable motorsport. A non-profit club for racers, by racers.</p>
       </div>
       <div><h5>About</h5><ul><li><a href="about.html">The SMC</a></li><li><a href="the-car.html">The Car</a></li><li><a href="get-involved.html">Rules &amp; Regs</a></li></ul></div>
-      <div><h5>Racing</h5><ul><li><a href="calendar.html">Calendar</a></li><li><a href="results.html">Results</a></li><li><a href="drivers.html">Drivers</a></li><li><a href="news.html">News</a></li></ul></div>
+      <div><h5>Racing</h5><ul><li><a href="calendar.html">Calendar</a></li><li><a href="results.html">Results</a></li><li><a href="drivers.html">Drivers</a></li><li><a href="news.html">News</a></li><li><a href="sponsors.html">Sponsors</a></li></ul></div>
       <div><h5>Get Involved</h5><ul><li><a href="get-involved.html">Join the SMC</a></li><li><a href="the-car.html">Get a SuperMini</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     </div>
     <div class="foot-bottom"><span>© 2026 SuperMini Challenge Inc. · admin@supermini.au</span><span>Facebook · Instagr
