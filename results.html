@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Results & Standings — SuperMini Challenge</title>
+<meta name="description" content="SuperMini Challenge standings by championship, class and year.">
+<link rel="stylesheet" href="assets/styles.css?v=4">
+<style>
+.t-champs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.t-champ{font-family:'Archivo','Inter',sans-serif;font-weight:800;font-size:.95rem;padding:11px 22px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:6px;cursor:pointer;transition:.15s}
+.t-champ:hover{border-color:var(--ink)}
+.t-champ.active{background:var(--ink);border-color:var(--ink);color:#fff}
+.p-champ{display:none}
+.p-champ.active{display:block}
+.t-classes{display:flex;flex-wrap:wrap;gap:26px;margin:0 0 20px;border-bottom:2px solid var(--line)}
+.t-class{font-family:'Archivo','Inter',sans-serif;font-weight:800;font-size:1.02rem;padding:0 2px 12px;background:none;border:none;border-bottom:3px solid transparent;margin-bottom:-2px;color:var(--muted);cursor:pointer;transition:.15s}
+.t-class:hover{color:var(--ink)}
+.t-class.active{color:var(--ink);border-bottom-color:var(--accent)}
+.p-class{display:none}
+.p-class.active{display:block}
+.t-years{display:inline-flex;flex-wrap:wrap;background:var(--bg-3);border-radius:8px;padding:4px;gap:4px;margin:0 0 22px}
+.t-year{font-family:'Archivo','Inter',sans-serif;font-weight:700;font-size:.85rem;padding:8px 16px;border:none;background:none;border-radius:6px;color:var(--muted);cursor:pointer;transition:.15s}
+.t-year:hover{color:var(--ink)}
+.t-year.active{background:#fff;color:var(--ink);box-shadow:0 1px 2px rgba(16,24,40,.14)}
+.p-year{display:none}
+.p-year.active{display:block}
+.ev-cap{color:var(--muted);font-size:.9rem;margin:0 0 14px}
+.ev-soon{color:var(--muted);font-style:italic;padding:24px 0}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><img class="brand" src="assets/logo-black.png" alt="SuperMini Challenge"></a>
+    <nav class="main">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="the-car.html">The Car</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="results.html" class="active">Results</a></li>
+        <li><a href="drivers.html">Drivers</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+      </ul>
+    </nav>
+    <div class="cta">
+      <a class="btn btn-ghost" href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="get-involved.html">Start Racing</a>
+      <button class="menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">Home</a> / Results</p>
+    <h1>Results & Standings</h1>
+    <p>Choose a championship, class and year to view the standings. Updated through the season.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+<div class="t-champs">
+<button class="t-champ" data-target="pc-aus">Australian Championship</button>
+<button class="t-champ active" data-target="pc-qld">Queensland State Championship</button>
+</div>
+<div class="p-champ" id="pc-aus">
+<div class="t-classes">
+<button class="t-class active" data-target="pcl-aus-cooper">Cooper Class</button>
+<button class="t-class" data-target="pcl-aus-open">Open Class</button>
+</div>
+<div class="p-class active" id="pcl-aus-cooper">
+<div class="p-year active" id="py-aus-cooper-2026"><p class="ev-cap">Cooper Class · Australian Championship · 2026.</p>
+<p class="ev-soon">New championship for 2026 — standings coming soon.</p></div>
+</div>
+<div class="p-class" id="pcl-aus-open">
+<div class="p-year active" id="py-aus-open-2026"><p class="ev-cap">Open Class · Australian Championship · 2026.</p>
+<p class="ev-soon">New championship for 2026 — standings coming soon.</p></div>
+</div>
+</div>
+<div class="p-champ active" id="pc-qld">
+<div class="t-classes">
+<button class="t-class active" data-target="pcl-qld-cooper">Cooper Class</button>
+<button class="t-class" data-target="pcl-qld-open">Open Class</button>
+</div>
+<div class="p-class active" id="pcl-qld-cooper">
+<div class="t-years">
+<button class="t-year active" data-target="py-qld-cooper-2026">2026</button>
+<button class="t-year" data-target="py-qld-cooper-2025">2025</button>
+<button class="t-year" data-target="py-qld-cooper-2024">2024</button>
+<button class="t-year" data-target="py-qld-cooper-2023">2023</button>
+<button class="t-year" data-target="py-qld-cooper-2022">2022</button>
+</div>
+<div class="p-year active" id="py-qld-cooper-2026"><p class="ev-cap">Cooper Class · Queensland State Championship · 2026 overall standings.</p>
+<table>
+<thead><tr><th>Pos</th><th>Driver</th><th>Car #</th><th style="text-align:right">Points</th></tr></thead>
+<tbody>
+<tr><td class="pos">1</td><td>Brock Gilchrist</td><td>10</td><td class="pts">293</td></tr>
+<tr><td class="pos">2</td><td>Gregg Chesterfield</td><td>54</td><td class="pts">267</td></tr>
+<tr><td class="pos">3</td><td>Josh Mills</td><td>3</td><td class="pts">240</td></tr>
+<tr><td class="pos">4</td><td>Anthony Elliott</td><td>66</td><td class="pts">190</td></tr>
+<tr><td class="pos">5</td><td>Brayden Larkin</td><td>7</td><td class="pts">190</td></tr>
+<tr><td class="pos">6</td><td>Blake Mills</td><td>25</td><td class="pts">187</td></tr>
+<tr><td class="pos">7</td><td>Trent Spencer</td><td>339</td><td class="pts">186</td></tr>
+<tr><td class="pos">8</td><td>Andrew Mills</td><td>24</td><td class="pts">184</td></tr>
+<tr><td class="pos">9</td><td>Zane Goddard</td><td>83</td><td class="pts">172</td></tr>
+<tr><td class="pos">10</td><td>James Campbell</td><td>72</td><td class="pts">162</td></tr>
+<tr><td class="pos">11</td><td>Brendan Cawley</td><td>5</td><td class="pts">161</td></tr>
+<tr><td class="pos">12</td><td>Kyle Evans</td><td>34</td><td class="pts">153</td></tr>
+<tr><td class="pos">13</td><td>Tom Brelsford</td><td>27</td><td class="pts">141</td></tr>
+<tr><td class="pos">14</td><td>Bryce Fullwood</td><td>55</td><td class="pts">133</td></tr>
+<tr><td class="pos">15</td><td>Leighton Ward</td><td>4</td><td class="pts">118</td></tr>
+<tr><td class="pos">16</td><td>Adam Duce</td><td>52</td><td class="pts">96</td></tr>
+<tr><td class="pos">17</td><td>Ursula Evans</td><td>35</td><td class="pts">87</td></tr>
+<tr><td class="pos">18</td><td>Erlond Bishop</td><td>40</td><td class="pts">79</td></tr>
+<tr><td class="pos">19</td><td>Allan Murray</td><td>23</td><td class="pts">76</td></tr>
+<tr><td class="pos">20</td><td>Chris Baptista</td><td>9</td><td class="pts">52</td></tr>
+</tbody>
+</table></div>
+<div class="p-year" id="py-qld-cooper-2025"><p class="ev-soon">2025 Queensland State Championship Cooper Class standings will be added to the archive soon.</p></div>
+<div class="p-year" id="py-qld-cooper-2024"><p class="ev-soon">2024 Queensland State Championship Cooper Class standings will be added to the archive soon.</p></div>
+<div class="p-year" id="py-qld-cooper-2023"><p class="ev-cap">Cooper Class · Queensland State Championship · 2023 total season points.</p>
+<table>
+<thead><tr><th>Pos</th><th>Driver</th><th style="text-align:right">Points</th></tr></thead>
+<tbody>
+<tr><td class="pos">1</td><td>Tom Brelsford</td><td class="pts">10355</td></tr>
+<tr><td class="pos">2</td><td>Blake Mills</td><td class="pts">10104</td></tr>
+<tr><td class="pos">3</td><td>Joshua Mills</td><td class="pts">8909</td></tr>
+<tr><td class="pos">4</td><td>Brendan Cawley</td><td class="pts">8735</td></tr>
+<tr><td class="pos">5</td><td>Craig Bateman</td><td class="pts">6487</td></tr>
+<tr><td class="pos">6</td><td>Tom Campbell</td><td class="pts">4187</td></tr>
+<tr><td class="pos">7</td><td>Adam Duce</td><td class="pts">3574</td></tr>
+<tr><td class="pos">8</td><td>Paul Brelsford</td><td class="pts">3431</td></tr>
+<tr><td class="pos">9</td><td>Jimmy Black</td><td class="pts">1277</td></tr>
+<tr><td class="pos">10</td><td>Leighton Ward</td><td class="pts">1203</td></tr>
+<tr><td class="pos">11</td><td>Chris Baptista</td><td class="pts">1186</td></tr>
+<tr><td class="pos">12</td><td>Lachlan Campbell</td><td class="pts">345</td></tr>
+</tbody>
+</table></div>
+<div class="p-year" id="py-qld-cooper-2022"><p class="ev-cap">Cooper Class · Queensland State Championship · 2022 total season points.</p>
+<table>
+<thead><tr><th>Pos</th><th>Driver</th><th style="text-align:right">Points</th></tr></thead>
+<tbody>
+<tr><td class="pos">1</td><td>Andrew Mills</td><td class="pts">755</td></tr>
+<tr><td class="pos">2</td><td>Blake Mills</td><td class="pts">675</td></tr>
+<tr><td class="pos">3</td><td>Damian Cavanagh</td><td class="pts">588</td></tr>
+<tr><td class="pos">4</td><td>Joshua Mills</td><td class="pts">549</td></tr>
+<tr><td class="pos">5</td><td>Brayden Larkin</td><td class="pts">502</td></tr>
+<tr><td class="pos">6</td><td>Roger Spencer</td><td class="pts">413</td></tr>
+<tr><td class="pos">7</td><td>Lachlan Campbell</td><td class="pts">249</td></tr>
+<tr><td class="pos">8</td><td>Thomas Campbell</td><td class="pts">168</td></tr>
+<tr><td class="pos">9</td><td>Duayne Pearce</td><td class="pts">137</td></tr>
+<tr><td class="pos">10</td><td>Tom Brelsford</td><td class="pts">62</td></tr>
+<tr><td class="pos">11</td><td>Brendan Cawley</td><td class="pts">0</td></tr>
+</tbody>
+</table></div>
+</div>
+<div class="p-class" id="pcl-qld-open">
+<div class="t-years">
+<button class="t-year active" data-target="py-qld-open-2026">2026</button>
+<button class="t-year" data-target="py-qld-open-2025">2025</button>
+<button class="t-year" data-target="py-qld-open-2024">2024</button>
+<button class="t-year" data-target="py-qld-open-2023">2023</button>
+<button class="t-year" data-target="py-qld-open-2022">2022</button>
+</div>
+<div class="p-year active" id="py-qld-open-2026"><p class="ev-cap">Open Class · Queensland State Championship · 2026 overall standings.</p>
+<p class="ev-soon">Standings coming soon.</p></div>
+<div class="p-year" id="py-qld-open-2025"><p class="ev-soon">2025 Queensland State Championship Open Class standings will be added to the archive soon.</p></div>
+<div class="p-year" id="py-qld-open-2024"><p class="ev-soon">2024 Queensland State Championship Open Class standings will be added to the archive soon.</p></div>
+<div class="p-year" id="py-qld-open-2023"><p class="ev-cap">Open Class · Queensland State Championship · 2023 total season points <span style="opacity:.7">(formerly Unlimited Class)</span>.</p>
+<table>
+<thead><tr><th>Pos</th><th>Driver</th><th style="text-align:right">Points</th></tr></thead>
+<tbody>
+<tr><td class="pos">1</td><td>Jim Campbell</td><td class="pts">11210</td></tr>
+<tr><td class="pos">2</td><td>Trent Spencer</td><td class="pts">10096</td></tr>
+<tr><td class="pos">3</td><td>Andrew Mills</td><td class="pts">9560</td></tr>
+<tr><td class="pos">4</td><td>Brayden Larkin</td><td class="pts">8949</td></tr>
+<tr><td class="pos">5</td><td>Anthony Elliott</td><td class="pts">8773</td></tr>
+<tr><td class="pos">6</td><td>Allan Murray</td><td class="pts">7022</td></tr>
+<tr><td class="pos">7</td><td>Gregg Chesterfield</td><td class="pts">2081</td></tr>
+</tbody>
+</table></div>
+<div class="p-year" id="py-qld-open-2022"><p class="ev-cap">Open Class · Queensland State Championship · 2022 total season points <span style="opacity:.7">(formerly Unlimited Class)</span>.</p>
+<table>
+<thead><tr><th>Pos</th><th>Driver</th><th style="text-align:right">Points</th></tr></thead>
+<tbody>
+<tr><td class="pos">1</td><td>Allan Murray</td><td class="pts">954</td></tr>
+<tr><td class="pos">2</td><td>Trent Spencer</td><td class="pts">550</td></tr>
+<tr><td class="pos">3</td><td>Jim Campbell</td><td class="pts">498</td></tr>
+<tr><td class="pos">4</td><td>Anthony Elliott</td><td class="pts">483</td></tr>
+<tr><td class="pos">5</td><td>Gregg Chesterfield</td><td class="pts">387</td></tr>
+<tr><td class="pos">6</td><td>Tom Campbell</td><td class="pts">140</td></tr>
+<tr><td class="pos">7</td><td>Adam Duce</td><td class="pts">131</td></tr>
+<tr><td class="pos">8</td><td>Steve Hoggett</td><td class="pts">90</td></tr>
+</tbody>
+</table></div>
+</div>
+</div>
+  </div>
+</section>
+
+<script>
+(function(){
+  document.querySelectorAll('.t-champ,.t-class,.t-year').forEach(function(b){
+    b.addEventListener('click',function(){
+      Array.prototype.forEach.call(b.parentNode.children,function(x){ x.classList.remove('active'); });
+      b.classList.add('active');
+      var t=document.getElementById(b.dataset.target);
+      if(!t) return;
+      var key=t.classList[0];
+      Array.prototype.forEach.call(t.parentNode.children,function(p){ if(p.classList.contains(key)) p.classList.remove('active'); });
+      t.classList.add('active');
+    });
+  });
+})();
+</script>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" style="margin-bottom:14px"><img class="brand" src="assets/logo-black.png" alt="SuperMini Challenge"></a>
+        <p style="color:var(--muted);font-size:.88rem;max-width:300px">Fun, competitive and affordable motorsport. A non-profit club for racers, by racers.</p>
+      </div>
+      <div><h5>About</h5><ul><li><a href="about.html">The SMC</a></li><li><a href="the-car.html">The Car</a></li><li><a href="get-involved.html">Rules &amp; Regs</a></li></ul></div>
+      <div><h5>Racing</h5><ul><li><a href="calendar.html">Calendar</a></li><li><a href="results.html">Results</a></li><li><a href="drivers.html">Drivers</a></li><li><a href="news.html">News</a></li></ul></div>
+      <div><h5>Get Involved</h5><ul><li><a href="get-involved.html">Join the SMC</a></li><li><a href="the-car.html">Get a SuperMini</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 SuperMini Challenge Inc. · admin@supermini.au</span><span>Facebook · Instagram · YouTube</span></div>
+  </div>
+</footer>
+<script src="assets/nav.js?v=5"></script>
+</body>
+</html>

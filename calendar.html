@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calendar — SuperMini Challenge</title>
+<meta name="description" content="The SuperMini Challenge 2026 calendar — Rubber Craft Australian Championship and Queensland State Championship rounds, with a live countdown to the next race.">
+<link rel="stylesheet" href="assets/styles.css?v=4">
+<script defer src="assets/nav.js?v=5"></script>
+<script defer src="assets/schedule.js?v=5"></script>
+<style>
+/* Calendar rounds rendered as red cards with track maps — self-contained */
+.champ-title{margin-top:42px}
+.round{display:flex!important;align-items:center;gap:20px;background:#e8112d!important;color:#fff;border:none!important;border-radius:6px;padding:16px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(16,24,40,.12);overflow:hidden}
+.round .rnum{flex:0 0 auto;font-family:'Archivo','Inter',sans-serif;font-weight:800;font-size:1.05rem;color:#fff;background:rgba(0,0,0,.20);width:52px;height:52px;display:flex;align-items:center;justify-content:center;border-radius:6px}
+.round .rmeta{flex:1 1 auto;min-width:0}
+.round .rmeta h4{margin:0 0 4px;color:#fff;font-family:'Archivo','Inter',sans-serif;font-weight:700;font-size:1.18rem;line-height:1.12;letter-spacing:-.01em}
+.round .rmeta .meta{margin:0;color:rgba(255,255,255,.85);font-size:.9rem}
+.round .rmap{flex:0 0 210px;display:flex;align-items:center;justify-content:center;height:96px}
+.round .rmap img{max-width:100%;max-height:96px;object-fit:contain;filter:drop-shadow(0 2px 5px rgba(0,0,0,.22))}
+.round .rmap .rsoon{font-size:.74rem;font-style:italic;color:rgba(255,255,255,.6)}
+.round .status{flex:0 0 auto;font-family:'Archivo','Inter',sans-serif;font-weight:700;font-size:.7rem;text-transform:uppercase;letter-spacing:.09em;background:rgba(0,0,0,.20);color:#fff;padding:7px 14px;border-radius:100px;white-space:nowrap}
+.round .status.next{background:#fff;color:#e8112d}
+@media(max-width:760px){
+  .round{flex-wrap:wrap;gap:12px 16px}
+  .round .rmeta{flex:1 1 60%}
+  .round .rmap{order:5;flex-basis:100%;height:130px}
+  .round .rmap img{max-height:130px}
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><img class="brand" src="assets/logo-black.png" alt="SuperMini Challenge"></a>
+    <nav class="main">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="the-car.html">The Car</a></li>
+        <li><a href="calendar.html" class="active">Calendar</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="drivers.html">Drivers</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+      </ul>
+    </nav>
+    <div class="cta">
+      <a class="btn btn-ghost" href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="get-involved.html">Start Racing</a>
+      <button class="menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">Home</a> / Calendar</p>
+    <h1>2026 Calendar</h1>
+    <p>Two championships across eight rounds. The next round is highlighted, with a live countdown on the home page.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="max-width:920px">
+
+    <h2 class="champ-title">Rubber Craft Australian Championship</h2>
+    <div class="round" data-start="2026-03-27" data-end="2026-03-29">
+      <div class="rnum">R1</div>
+      <div class="rmeta"><h4>Morgan Park</h4><p class="meta">Warwick, QLD · 27–29 March 2026</p></div>
+      <div class="rmap"><img src="assets/img/tracks/morgan-park.png?v=5" alt="Morgan Park circuit map"></div>
+      <div class="status">Upcoming</div>
+    </div>
+    <div class="round" data-start="2026-06-12" data-end="2026-06-13">
+      <div class="rnum">R2</div>
+      <div class="rmeta"><h4>Sydney Motorsport Park</h4><p class="meta">Eastern Creek, NSW · 12–13 June 2026</p></div>
+      <div class="rmap"><img src="assets/img/tracks/sydney.png?v=5" alt="Sydney Motorsport Park circuit map"></div>
+      <div class="status">Upcoming</div>
+    </div>
+    <div class="round" data-start="2026-08-21" data-end="2026-08-23">
+      <div class="rnum">R3</div>
+      <div class="rmeta"><h4>The Bend Motorsport Park</h4><p class="meta">Tailem Bend, SA · 21–23 August 2026</p></div>
+      <div class="rmap"><img src="assets/img/tracks/the-bend.png?v=5" alt="The Bend Motorsport Park circuit map"></div>
+      <div class="status">Upcoming</div>
+    </div>
+
+    <h2 class="champ-title">Rubber Craft Queensland State Championship</h2>
+    <div class="round" data-start="2026-02-28" data-end="2026-03-01">
+      <div class="rnum">R1</div>
+      <div class="rmeta"><h4>Queensland Raceway</h4><p class="meta">Ipswich, QLD · 28 February – 1 March 2026</p></div>
+      <div class="rmap"><img src="assets/img/tracks/queensland.png?v=5" alt="Queensland Raceway circuit map"></div>
+      <div class="status">Upcoming</div>
+    </div>
+    <div class="round" data-start="2026-03-27" data-end="2026-03-29">
+      <div class="rnum">R2</div>
+      <div class="rmeta"><h4>Morgan Park</h4><p class="meta">Warwick, QLD · 27–29 March 2026</p></div>
+      <div class="rmap"><img src="assets/img/tracks/morgan-park.png?v=5" alt="Morgan Park circuit map"></div>
+      <div class="status">Upcoming</div>
+    </div>
+    <div class="round" data-start="2026-05-22" data-end="2026-05-24">
+      <div class="rnum">R3</div>
+      <div class="rmeta"><h4>Morgan Park</h4><p class="meta">Warwick, QLD · 22–24 May 2026</p></div>
+      <div class="rmap"><img src="assets/img/tracks/morgan-park.png?v=5" alt="Morgan Park circuit map"></div>
+      <div class="status">Upcoming</div>
+    </div>
+    <div class="round" data-start="2026-09-19" data-end="2026-09-20">
+      <div class="rnum">R4</div>
+      <div class="rmeta"><h4>Queensland Raceway</h4><p class="meta">Ipswich, QLD · 19–20 September 2026</p></div>
+      <div class="rmap"><img src="assets/img/tracks/queensland.png?v=5" alt="Queensland Raceway circuit map"></div>
+      <div class="status">Upcoming</div>
+    </div>
+    <div class="round" data-start="2026-11-06" data-end="2026-11-08">
+      <div class="rnum">R5</div>
+      <div class="rmeta"><h4>Morgan Park</h4><p class="meta">Warwick, QLD · 6–8 November 2026</p></div>
+      <div class="rmap"><img src="assets/img/tracks/morgan-park.png?v=5" alt="Morgan Park circui

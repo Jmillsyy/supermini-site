@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" role="img" aria-label="SuperMini Challenge logo">
+  <defs>
+    <pattern id="checker" width="34" height="34" patternUnits="userSpaceOnUse">
+      <rect width="34" height="34" fill="#fff"/>
+      <rect width="17" height="17" fill="#111"/>
+      <rect x="17" y="17" width="17" height="17" fill="#111"/>
+    </pattern>
+    <clipPath id="flagClipL">
+      <path d="M150,22 C126,12 96,40 66,28 C54,23 46,28 34,30 L40,82 C58,90 94,62 124,76 C136,81 146,76 150,70 Z"/>
+    </clipPath>
+    <g id="flag">
+      <!-- pole -->
+      <line x1="150" y1="128" x2="138" y2="12" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+      <!-- checkered field -->
+      <rect x="30" y="8" width="124" height="82" fill="url(#checker)" clip-path="url(#flagClipL)"/>
+      <!-- outline -->
+      <path d="M150,22 C126,12 96,40 66,28 C54,23 46,28 34,30 L40,82 C58,90 94,62 124,76 C136,81 146,76 150,70 Z"
+            fill="none" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
+    </g>
+    <g id="wing">
+      <polygon points="300,168 300,184 74,201"/>
+      <polygon points="256,205 256,219 95,234"/>
+      <polygon points="256,227 256,241 119,251"/>
+      <polygon points="256,249 256,263 147,266"/>
+    </g>
+  </defs>
+
+  <!-- ===== TOP: flags + SUPER ===== -->
+  <use href="#flag"/>
+  <use href="#flag" transform="matrix(-1,0,0,1,600,0)"/>
+  <text x="300" y="74" text-anchor="middle" fill="#111"
+        font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900"
+        font-size="56" letter-spacing="6">SUPER</text>
+
+  <!-- ===== MIDDLE: winged MINI emblem ===== -->
+  <g fill="#111" stroke="#111" stroke-width="2" stroke-linejoin="round">
+    <use href="#wing"/>
+    <use href="#wing" transform="matrix(-1,0,0,1,600,0)"/>
+  </g>
+  <circle cx="300" cy="238" r="74" fill="#fff" stroke="#111" stroke-width="12"/>
+  <text x="300" y="256" text-anchor="middle" fill="#111"
+        font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900"
+        font-size="50" letter-spacing="2">MINI</text>
+
+  <!-- ===== BOTTOM: Challenge script ===== -->
+  <text x="300" y="430" text-anchor="middle" fill="#111" font-style="italic"
+        font-family="'Brush Script MT','Segoe Script','Lucida Handwriting',cursive"
+        font-size="94">Challenge</text>
+  <path d="M138,452 C240,474 372,472 466,448" fill="none" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+</svg>
