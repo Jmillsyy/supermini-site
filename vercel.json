@@ -1,0 +1,18 @@
+{
+  "redirects": [
+    { "source": "/smc", "destination": "/about.html", "permanent": true },
+    { "source": "/smc_origin", "destination": "/about.html", "permanent": true },
+    { "source": "/rules-regulations", "destination": "/rules.html", "permanent": true },
+    { "source": "/smc-vehicles", "destination": "/the-car.html", "permanent": true },
+    { "source": "/driver-profiles", "destination": "/drivers.html", "permanent": true },
+    { "source": "/sponsors", "destination": "/sponsors.html", "permanent": true },
+    { "source": "/season-results", "destination": "/results.html", "permanent": true },
+    { "source": "/news", "destination": "/news.html", "permanent": true },
+    { "source": "/category/news", "destination": "/news.html", "permanent": true },
+    { "source": "/join-the-smc", "destination": "/get-involved.html", "permanent": true },
+    { "source": "/get-a-supermini", "destination": "/get-involved.html", "permanent": true },
+    { "source": "/contact-us", "destination": "/contact.html", "permanent": true },
+    { "source": "/brock-gilchrist-wraps-up-round-1", "destination": "/news-gilchrist.html", "permanent": true },
+    { "source": "/fullwood-change-of-pace-in-grassroots-return", "destination": "/news-fullwood.html", "permanent": true }
+  ]
+}
