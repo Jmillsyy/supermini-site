@@ -1,6 +1,15 @@
 {
   "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
+    { "source": "/index.php/:path*", "destination": "/:path*", "permanent": true },
+    { "source": "/shop", "destination": "/", "permanent": true },
+    { "source": "/shop/:path*", "destination": "/", "permanent": true },
+    { "source": "/product/:path*", "destination": "/", "permanent": true },
+    { "source": "/product-category/:path*", "destination": "/", "permanent": true },
+    { "source": "/cart", "destination": "/", "permanent": true },
+    { "source": "/checkout", "destination": "/", "permanent": true },
+    { "source": "/my-account", "destination": "/", "permanent": true },
     { "source": "/smc", "destination": "/about", "permanent": true },
     { "source": "/smc_origin", "destination": "/about", "permanent": true },
     { "source": "/rules-regulations", "destination": "/rules", "permanent": true },
