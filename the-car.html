@@ -6,7 +6,7 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="assets/icon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icon-180.png">
-<title>The Car — BMW R53 Cooper S | SuperMini Challenge</title>
+<title>The Cars — Cooper &amp; Unlimited Class | SuperMini Challenge</title>
 <meta name="description" content="The SuperMini Challenge Cooper Class is built on the BMW R53 Cooper S — evenly matched, close racing and controlled costs — while the Unlimited Class opens the rules for faster, more developed Minis.">
 <link rel="stylesheet" href="assets/styles.css?v=5">
 </head>
@@ -34,32 +34,59 @@
   </div>
 </header>
 
-<section class="page-hero">
+<style>
+.class-split{display:grid;grid-template-columns:1fr 1fr;gap:20px;min-height:62vh;padding-bottom:64px}
+.class-split a{position:relative;display:flex;align-items:flex-end;padding:40px 36px;background-size:cover;background-position:center;transition:filter .2s;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.class-split a:hover{filter:brightness(1.12)}
+.class-split .cs-cap{position:relative;color:#fff}
+.class-split .cs-cap .eyebrow{color:#fff;opacity:.85}
+.class-split h2{color:#fff;font-size:2.4rem;margin:8px 0 10px}
+.class-split p{opacity:.92;max-width:420px;margin-bottom:16px}
+.class-split .tag-btn{display:inline-block;border:1px solid rgba(255,255,255,.6);padding:10px 20px;border-radius:6px;font-family:var(--font-head);font-weight:800;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+@media(max-width:820px){.class-split{grid-template-columns:1fr}.class-split a{min-height:46vh}}
+</style>
+
+<section class="page-hero" style="padding:42px 0 34px">
   <div class="wrap">
-    <p class="crumb"><a href="index.html">Home</a> / The Car</p>
-    <h1>The BMW R53 Cooper S</h1>
-    <p>The Cooper Class car. Evenly matched. Pure driver versus driver.</p>
+    <p class="crumb"><a href="index.html">Home</a> / The Cars</p>
+    <h1>The Cars</h1>
+    <p>The SuperMini Challenge runs two classes — the controlled Cooper Class and the open-rules Unlimited Class.</p>
   </div>
 </section>
 
-<section>
-  <div class="wrap grid-2">
-    <div class="photo-box filled"><img src="assets/img/car-r53.jpg" alt="SuperMini Challenge BMW R53 Cooper S race car"></div>
-    <div class="prose">
-      <p class="eyebrow">The Cooper Class car</p>
-      <h2 style="font-size:2rem;margin:10px 0 18px">Built for close racing</h2>
-      <p>The SuperMini Challenge Cooper Class runs a single, controlled car — the BMW R53 Cooper S. An evenly matched field keeps the racing tight from top to bottom.</p>
-      <p>The cars are exciting to drive, forgiving enough for newcomers, and rewarding enough to keep experienced racers honest.</p>
-      <p>After more pace? The <strong>Unlimited Class</strong> runs alongside Cooper at every round — an open class for faster, more developed Minis. See the <a href="rules.html" class="accent">rules</a> for what's eligible.</p>
-      <a class="btn btn-primary" href="get-involved.html">Get a SuperMini</a>
+<div class="wrap class-split">
+  <a href="#cooper" style="background-image:linear-gradient(180deg,rgba(11,13,17,.15) 40%,rgba(11,13,17,.82)),url(assets/img/car-r53.jpg)">
+    <div class="cs-cap">
+      <p class="eyebrow">Entry class · Controlled car</p>
+      <h2>Cooper Class</h2>
+      <p>BMW R50 &amp; R53 Mini Cooper / Cooper S (2001–2006), largely OEM with a defined list of permitted modifications.</p>
+      <span class="tag-btn">Cooper Class details ↓</span>
     </div>
-  </div>
-</section>
+  </a>
+  <a href="#unlimited" style="background-image:linear-gradient(180deg,rgba(11,13,17,.15) 40%,rgba(11,13,17,.82)),url(assets/img/unlimited.jpeg)">
+    <div class="cs-cap">
+      <p class="eyebrow">Open rules</p>
+      <h2>Unlimited Class</h2>
+      <p>Minis built to Motorsport Australia Group 3D Sport Sedan regulations, with SMC amendments.</p>
+      <span class="tag-btn">Unlimited Class details ↓</span>
+    </div>
+  </a>
+</div>
 
-<section class="bg2">
+<!-- ===== COOPER CLASS ===== -->
+<section id="cooper">
   <div class="wrap">
-    <div class="section-head"><p class="eyebrow">Specifications</p><h2>The numbers</h2><p>Key figures from the SuperMini Challenge technical regulations (v5.0).</p></div>
-    <div class="specs" style="grid-template-columns:repeat(4,1fr)">
+    <div class="section-head"><p class="eyebrow">Entry class</p><h2>Cooper Class</h2><p>Eligible cars are the BMW R50 &amp; R53 Mini Cooper / Cooper S, produced 2001–2006.</p></div>
+    <div class="grid-2">
+      <div class="photo-box filled"><img src="assets/img/car-r53.jpg" alt="SuperMini Challenge BMW R53 Cooper S race car"></div>
+      <div class="prose">
+        <h3 style="font-size:1.4rem;margin-bottom:14px">How the class works</h3>
+        <p>Cooper Class cars remain largely OEM, with a defined list of permitted modifications. Parity comes from control components — a Link G4X control ECU, the RubberCraft SP-01R control tyre, a 1200 kg minimum weight with driver, and commercially available 98 RON pump fuel only.</p>
+        <p>Engine internals are free but must not exceed an 8.5:1 compression ratio, and the factory supercharger must remain unmodified. Any modification judged to give a performance advantage moves the car to the Unlimited Class.</p>
+        <a class="btn btn-primary" href="get-involved.html">Get a SuperMini</a>
+      </div>
+    </div>
+    <div class="specs" style="grid-template-columns:repeat(4,1fr);margin-top:36px">
       <div class="spec"><b>R53</b><span>Chassis (2001–2006)</span></div>
       <div class="spec"><b>Cooper S</b><span>Model</span></div>
       <div class="spec"><b>1.6L</b><span>Supercharged</span></div>
@@ -67,18 +94,33 @@
       <div class="spec"><b>1200 kg</b><span>Min weight (with driver)</span></div>
       <div class="spec"><b>225/45 R17</b><span>RubberCraft SP-01R control tyre</span></div>
       <div class="spec"><b>98 RON</b><span>Pump fuel only</span></div>
-      <div class="spec"><b>Cooper</b><span>Class</span></div>
+      <div class="spec"><b>8.5:1</b><span>Max compression ratio</span></div>
     </div>
   </div>
 </section>
 
-<section>
+<!-- ===== UNLIMITED CLASS ===== -->
+<section id="unlimited" class="bg2">
   <div class="wrap">
-    <div class="section-head"><p class="eyebrow">Why a controlled car</p><h2>The Cooper Class advantage</h2></div>
-    <div class="card-grid">
-      <div class="card"><div class="body"><h4>Closer racing</h4><p class="date">Evenly matched cars mean tighter packs and more on-track battles all the way down the field.</p></div></div>
-      <div class="card"><div class="body"><h4>Controlled cost</h4><p class="date">A defined platform stops a development arms race, so budgets stay realistic for everyone.</p></div></div>
-      <div class="card"><div class="body"><h4>Easy to get started</h4><p class="date">Know exactly what car you need, what it costs and what's allowed before you commit.</p></div></div>
+    <div class="section-head"><p class="eyebrow">Open rules</p><h2>Unlimited Class</h2><p>Built to Motorsport Australia Group 3D Sport Sedan regulations, subject to SMC amendments.</p></div>
+    <div class="grid-2">
+      <div class="photo-box filled" style="aspect-ratio:16/9"><img src="assets/img/unlimited.jpeg" style="height:100%" alt="SuperMini Challenge Unlimited Class race car"></div>
+      <div class="prose">
+        <h3 style="font-size:1.4rem;margin-bottom:14px">How the class works</h3>
+        <p>Engine internals and gearbox are free, and no minimum weight is enforced. Cars must remain front-wheel-drive floorpan cars as defined in the Group 3D regulations, with the engine block sourced from a BMC or BMW Mini and mounted no further back than the firewall.</p>
+        <p>Maximum rim size is 17 x 9 inches, overall track width is limited to 1875 mm, ABS is free, and all cars run the RubberCraft RC001 control tyre in 220/620-R17 or 240/610-R17.</p>
+        <a class="btn btn-primary" href="rules.html">Read the full rules</a>
+      </div>
+    </div>
+    <div class="specs" style="grid-template-columns:repeat(4,1fr);margin-top:36px">
+      <div class="spec"><b>Group 3D</b><span>MA Sport Sedan based</span></div>
+      <div class="spec"><b>BMC / BMW</b><span>Mini engine block</span></div>
+      <div class="spec"><b>Free</b><span>Internals &amp; gearbox</span></div>
+      <div class="spec"><b>None</b><span>Minimum weight</span></div>
+      <div class="spec"><b>17 x 9</b><span>Max rim size</span></div>
+      <div class="spec"><b>RC001</b><span>RubberCraft control tyre</span></div>
+      <div class="spec"><b>1875 mm</b><span>Max track width</span></div>
+      <div class="spec"><b>FWD</b><span>Drivetrain</span></div>
     </div>
   </div>
 </section>

@@ -52,11 +52,13 @@
       <p>We're a volunteer-run, non-profit club based in Queensland. We'll get back to you as soon as we can.</p>
     </div>
     <div>
-      <form onsubmit="event.preventDefault(); alert('Demo form — connect to a form service before launch.');">
-        <div class="field"><label>Name</label><input type="text" placeholder="Your name" required></div>
-        <div class="field"><label>Email</label><input type="email" placeholder="you@email.com" required></div>
-        <div class="field"><label>What's it about?</label><input type="text" placeholder="Joining / the car / sponsorship"></div>
-        <div class="field"><label>Message</label><textarea rows="5" placeholder="Tell us a bit about yourself..."></textarea></div>
+      <form action="https://formspree.io/f/mykrgpvb" method="POST">
+        <input type="hidden" name="_subject" value="SuperMini website enquiry">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="field"><label for="cf-name">Name</label><input id="cf-name" type="text" name="name" placeholder="Your name" required></div>
+        <div class="field"><label for="cf-email">Email</label><input id="cf-email" type="email" name="email" placeholder="you@email.com" required></div>
+        <div class="field"><label for="cf-topic">What's it about?</label><input id="cf-topic" type="text" name="topic" placeholder="Joining / the car / sponsorship"></div>
+        <div class="field"><label for="cf-message">Message</label><textarea id="cf-message" name="message" rows="5" placeholder="Tell us a bit about yourself..." required></textarea></div>
         <button class="btn btn-primary" type="submit">Send message</button>
       </form>
     </div>
